@@ -12,6 +12,9 @@
 		3701D45E23468BD6005FD5B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3701D45C23468BD6005FD5B5 /* Main.storyboard */; };
 		3701D46023468BD8005FD5B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3701D45F23468BD8005FD5B5 /* Assets.xcassets */; };
 		3701D46323468BD8005FD5B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3701D46123468BD8005FD5B5 /* LaunchScreen.storyboard */; };
+		3701D4772346901B005FD5B5 /* YTPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3701D4762346901B005FD5B5 /* YTPlayerView.swift */; };
+		3701D47A23469918005FD5B5 /* ok.html in Resources */ = {isa = PBXBuildFile; fileRef = 3701D47923469918005FD5B5 /* ok.html */; };
+		3701D47C2346A18D005FD5B5 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3701D47B2346A18D005FD5B5 /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,10 @@
 		3701D45F23468BD8005FD5B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3701D46223468BD8005FD5B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3701D46423468BD8005FD5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3701D46B23468C76005FD5B5 /* helper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "helper-Bridging-Header.h"; sourceTree = "<group>"; };
+		3701D4762346901B005FD5B5 /* YTPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTPlayerView.swift; sourceTree = "<group>"; };
+		3701D47923469918005FD5B5 /* ok.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ok.html; sourceTree = "<group>"; };
+		3701D47B2346A18D005FD5B5 /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +61,15 @@
 		3701D45723468BD6005FD5B5 /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				3701D46B23468C76005FD5B5 /* helper-Bridging-Header.h */,
+				3701D4762346901B005FD5B5 /* YTPlayerView.swift */,
+				3701D47B2346A18D005FD5B5 /* SecondVC.swift */,
 				3701D45823468BD6005FD5B5 /* AppDelegate.swift */,
 				3701D45A23468BD6005FD5B5 /* ViewController.swift */,
 				3701D45C23468BD6005FD5B5 /* Main.storyboard */,
 				3701D45F23468BD8005FD5B5 /* Assets.xcassets */,
 				3701D46123468BD8005FD5B5 /* LaunchScreen.storyboard */,
+				3701D47923469918005FD5B5 /* ok.html */,
 				3701D46423468BD8005FD5B5 /* Info.plist */,
 			);
 			path = helper;
@@ -96,6 +107,7 @@
 				TargetAttributes = {
 					3701D45423468BD6005FD5B5 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -122,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3701D47A23469918005FD5B5 /* ok.html in Resources */,
 				3701D46323468BD8005FD5B5 /* LaunchScreen.storyboard in Resources */,
 				3701D46023468BD8005FD5B5 /* Assets.xcassets in Resources */,
 				3701D45E23468BD6005FD5B5 /* Main.storyboard in Resources */,
@@ -137,6 +150,8 @@
 			files = (
 				3701D45B23468BD6005FD5B5 /* ViewController.swift in Sources */,
 				3701D45923468BD6005FD5B5 /* AppDelegate.swift in Sources */,
+				3701D47C2346A18D005FD5B5 /* SecondVC.swift in Sources */,
+				3701D4772346901B005FD5B5 /* YTPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BYQXG5B873;
 				INFOPLIST_FILE = helper/Info.plist;
@@ -291,6 +307,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicokla.helper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "helper/helper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BYQXG5B873;
 				INFOPLIST_FILE = helper/Info.plist;
@@ -309,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicokla.helper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "helper/helper-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
