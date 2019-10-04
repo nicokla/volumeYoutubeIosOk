@@ -975,8 +975,17 @@ open class YTPlayerView: UIView {
         
         self.webView?.removeFromSuperview()
         self.webView = createNewWebView()
+        
         self.addSubview(self.webView)
-        self.webView.scalesPageToFit = true
+//        self.webView.scalesPageToFit = true
+        webView.translatesAutoresizingMaskIntoConstraints = false
+        let constraint1 = NSLayoutConstraint(item: self.webView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: 0)
+        let constraint2 = NSLayoutConstraint(item: webView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 0)
+        let constraint3 = NSLayoutConstraint(item: webView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0)
+        let constraint4 = NSLayoutConstraint(item: webView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0)
+        self.addConstraints([constraint1, constraint2, constraint3, constraint4])
+        
+
 //        let path: String!
         
 //        if UI_USER_INTERFACE_IDIOM() == .pad{

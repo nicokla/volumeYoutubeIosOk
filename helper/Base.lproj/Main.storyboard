@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCk-jX-Xx3" customClass="YTPlayerView" customModule="helper" customModuleProvider="target">
-                                <rect key="frame" x="37" y="62" width="118" height="88"/>
+                                <rect key="frame" x="37" y="62" width="186" height="101"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="pS8-wc-YjO"/>
-                                    <constraint firstAttribute="width" constant="118" id="sN6-y9-qnU"/>
+                                    <constraint firstAttribute="height" constant="101" id="pS8-wc-YjO"/>
+                                    <constraint firstAttribute="width" constant="186" id="sN6-y9-qnU"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjE-uc-mc7">
@@ -74,10 +74,10 @@
                         <constraints>
                             <constraint firstItem="fjE-uc-mc7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="IQL-hd-XxB"/>
                             <constraint firstItem="pIe-SI-dpt" firstAttribute="top" secondItem="fjE-uc-mc7" secondAttribute="bottom" constant="26" id="aXf-RV-KqO"/>
-                            <constraint firstItem="fjE-uc-mc7" firstAttribute="leading" secondItem="RCk-jX-Xx3" secondAttribute="trailing" constant="79" id="eKs-wJ-luo"/>
+                            <constraint firstItem="fjE-uc-mc7" firstAttribute="leading" secondItem="RCk-jX-Xx3" secondAttribute="trailing" constant="11" id="eKs-wJ-luo"/>
                             <constraint firstItem="RCk-jX-Xx3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="haL-2P-qRG"/>
                             <constraint firstItem="RCk-jX-Xx3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="teb-kM-jf2"/>
-                            <constraint firstItem="pIe-SI-dpt" firstAttribute="leading" secondItem="RCk-jX-Xx3" secondAttribute="trailing" constant="84" id="u9L-0r-BNC"/>
+                            <constraint firstItem="pIe-SI-dpt" firstAttribute="leading" secondItem="RCk-jX-Xx3" secondAttribute="trailing" constant="16" id="u9L-0r-BNC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

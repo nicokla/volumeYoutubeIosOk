@@ -47,16 +47,15 @@ class ViewController: UIViewController {
     }
 
     func loadVideoSwift(){
-        let playerVars:[String: Any] = [
-            "controls" : "0",
+        let playerVars:[String: Any] =
+        ["controls" : "0",
             "showinfo" : "0",
             "autoplay": "0",
             "rel": "0",
             "modestbranding": "0",
 //            "iv_load_policy" : "3",
             "fs": "0",
-            "playsinline" : "1"
-            ]
+            "playsinline" : "1"]
         ytPlayerView.delegate = self
         _ = ytPlayerView.load(videoId: videoId, playerVars: playerVars)
 //        ytPlayerView.isUserInteractionEnabled = false
